@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Instadress",
+  "description": "Insert string into address bar without selecting it",
+  "version": "0.1",
+
+  "icons": {
+    "128": "logo.png"
+  },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["jquery-2.1.1.min.js", "instadress.js"]
+  }]
+}
